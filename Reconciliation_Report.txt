@@ -1,0 +1,31 @@
+
+Financial Data Reconciliation Report
+
+Overall Reconciliation Summary
+
+This report summarizes the reconciliation of transactions between the ERP data and the Bank Statement. The reconciliation process was automated using a Gen AI agentic framework.
+
+- **Total ERP Transactions:** 200
+- **Total Bank Statement Transactions:** 208
+- **Successfully Matched Transactions:** 181
+
+**Overall Reconciliation Rate:** 90.50%
+
+Summary of Issues Found
+
+The AI agent identified and classified the following discrepancies:
+
+- **Amount Mismatches:** 7 transactions were found with matching Invoice IDs but differing amounts. This often occurs due to bank fees, currency exchange differences, or data entry errors.
+- **Missing in Bank:** 20 transactions are present in the ERP but not on the bank statement. These may be timing differences (e.g., payments not yet cleared), unrecorded transactions, or pending ERP entries.
+- **Missing in ERP:** 20 transactions are on the bank statement but not in the ERP. This could be due to unrecorded bank charges, direct deposits, or uncaptured sales.
+
+Recommendations
+
+Based on the findings, we recommend the following actions:
+
+1.  **Investigate Amount Mismatches:** Manually review the 7 transactions with amount differences. The AI has pinpointed the exact Invoice IDs, making this process efficient.
+2.  **Review Unmatched Transactions:** Investigate the 20 transactions missing from each source to determine if they are timing differences or true discrepancies that require manual entry or correction.
+3.  **Improve Data Synchronization:** Consider implementing an automated feed between the bank and ERP system to reduce manual data entry and minimize timing-related discrepancies.
+4.  **Enhance Data Descriptions:** If possible, standardize transaction descriptions in both systems to enable more robust fuzzy matching in the future.
+
+This report demonstrates how a Gen AI framework can significantly automate the reconciliation process, pinpointing key discrepancies and providing actionable insights for financial teams.
